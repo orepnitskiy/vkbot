@@ -4,7 +4,7 @@ import json
 from vk_api.longpoll import VkLongPoll, VkEventType
 from random import randint
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor
-vk_session = vk_api.VkApi(token='00fdeb8266451c29c70f720e9f7770261ca054f7c86ffcf2449dfd45a2394f40a4189d0e3362fdcab0c83')
+vk_session = vk_api.VkApi(token='YOUR TOKEN')
 longpoll = VkLongPoll(vk_session)
 vk = vk_session.get_api()
 for event in longpoll.listen():
